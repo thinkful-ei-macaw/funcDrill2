@@ -84,3 +84,17 @@ howManyDays('February', true);
 
 //fifth function
 
+function findWinner (num1, num2) {
+  if (num1 === 1 && num2 === 2) {
+    console.log('Rock beats Scissors');
+  } else if (num1 === 2 && num2 === 3) {
+    console.log('Scissors beats Paper');
+  } else if (num1 === 3 && num2 === 1) {
+    console.log('Paper beats Rock');
+  } else if (num1 === num2) {
+    console.log('It is a Tie');
+  }
+}
+const randomNo = Math.floor(Math.random() * 3) + 1;
+
+findWinner(2, randomNo);
